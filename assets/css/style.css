@@ -864,6 +864,116 @@ section {
   width: 0%; /* Initial value */
 }
 
+/*--------------------------------------------------------------
+# icon
+--------------------------------------------------------------*/
+
+#con {
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#con .cardx {
+ background: radial-gradient(939px at 94.7% 50%, rgb(0, 178, 169) 0%, rgb(0, 106, 101) 76.9%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 20px;
+
+    box-shadow: 0 15px 0 #fff,
+            inset 0 -15px 0 rgba(255, 255, 255, 0.24),
+            0  0;
+    overflow: hidden;
+     
+}
+
+
+
+
+
+#con .cardx:nth-child(2) {
+    background: linear-gradient(to bottom, #ffec61, #f321d7);
+}
+
+#con .cardx:nth-child(3) {
+    background: linear-gradient(to bottom, #24ff72, #9a4eff);
+}
+
+#con .cardx .iconx {
+    position: relative;
+    width: 140px;
+    height: 120px;
+    background: white;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0 15px 0 rgba(0, 0, 0, 0.1),
+            inset 0 -8px 0 #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#con .cardx .iconx::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px white;
+}
+
+#con .cardx .iconx::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -15px -15px 0 15px white;
+}
+
+#con .cardx .iconx i {
+    color: black;
+    position: relative;
+    font-size: 5em;
+    z-index: 1000;
+    --ionicon-stroke-width: 24px;
+}
+
+
+#con .cardx .contentx {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-top: 120px;
+    text-align: center;
+}
+
+#con .cardx .contentx h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+#con .cardx .contentx h1 {
+    color: #fff;
+}
+
+#con .cardx .contentx p {
+    color: #fff;
+}
 
 /*--------------------------------------------------------------
 # Facts
