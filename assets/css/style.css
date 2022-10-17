@@ -2,6 +2,37 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,500,700';
 
 
+      .fill {
+        font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 5px 20px 5px;
+      outline: 0;
+      border: 1px solid black;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      cursor: none;
+      }
+
+      .fill::after {
+      content: "";
+      background-color: rgb(158, 255, 168);
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+      cursor: none;
+      }
+
+      .fill:hover::after {
+      top: 0px;
+      left: 0px;
+      }
+
       button.btnSubmit {
       font-family: 'Roboto', sans-serif;
       outline: none;
@@ -678,6 +709,67 @@ h6 {
     font-size: 18px;
     line-height: 24px;
   }
+}
+
+/*--------------------------------------------------------------
+# Transition effect
+--------------------------------------------------------------*/
+.card2 {
+   top: 0px;
+   position: relative;
+   text-decoration: none;
+   z-index: 0;
+   overflow: hidden;
+   transition: all 0.2s ease-out;
+   cursor: none;
+}
+.card2:hover {
+   transition: all 0.2s ease-out;
+   top: -15px;
+}
+.radius-10 {
+    border-radius: 10px !important;
+}
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 0px solid rgba(0, 0, 0, 0);
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px 0 rgb(218 218 253 / 65%), 0 2px 6px 0 rgb(206 206 238 / 54%);
+    border-color: red;
+}
+.widgets-icons-2 {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+}
+
+.tls {
+  position: relative;
+}
+
+.tls::before {
+  /* Highlight color */
+  background-color: rgb(158, 255, 168);
+
+  content: "";
+  border-radius: 100px;
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -3px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(-2deg);
 }
 
 /*--------------------------------------------------------------
