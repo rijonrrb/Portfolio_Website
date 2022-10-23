@@ -228,7 +228,7 @@ svg .checkmark1 .line2 {
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
-  opacity: 1;
+  opacity: 0.8;
   -webkit-transition: opacity 0.8s ease, -webkit-transform 1.4s ease;
   transition: opacity 0.8s ease, transform 1.4s ease;
 }
