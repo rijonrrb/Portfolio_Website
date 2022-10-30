@@ -1468,8 +1468,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #fff;
-  background: #34b7a7;
+  color: black;
+  background: rgb(158, 255, 168);
 }
 
 .portfolio #portfolio-flters li:last-child {
